@@ -8,7 +8,7 @@ public struct TextView: View {
     @Binding private var text: NSAttributedString
     @Binding private var isEmpty: Bool
 
-    @State private var calculatedHeight: CGFloat = 44
+    @State private var calculatedHeight: CGFloat = 0
 
     private var onEditingChanged: (() -> Void)?
     private var shouldEditInRange: ((Range<String.Index>, String) -> Bool)?
